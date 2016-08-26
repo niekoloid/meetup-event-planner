@@ -6,6 +6,11 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
   </head><body>
+    <script id="__bs_script__">
+      //<![CDATA[
+          document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
+      //]]>
+    </script>
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -15,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><span>Meet-Up Event Planner</span></a>
+          <a class="navbar-brand" href="#"><span>Meet-Up Event Planner with Browser-sync</span></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse"></div>
       </div>
@@ -71,7 +76,7 @@
               </div>
               <div class="form-group">
                 <label class="control-label" for="typeofevent">Type of the event</label>
-                <input class="form-control" id="typeofevent" placeholder="" type="event">
+                <input class="form-control" id="typeofevent" placeholder="" type="text">
               </div>
               <div class="form-group">
                 <label class="control-label" for="exampleInputPassword1">Event host</label>
@@ -79,11 +84,11 @@
               </div>
               <div class="form-group">
                 <label class="control-label" for="eventstart">Event start date and time</label>
-                <input class="form-control" id="eventstart" type="datetime-local">
+                <input class="form-control" id="eventstart" type="text">
               </div>
               <div class="form-group">
                 <label class="control-label" for="exampleInputPassword1">Event end date and time</label>
-                <input class="form-control" id="exampleInputPassword1" type="datetime-local">
+                <input class="form-control" id="exampleInputPassword1" type="text">
               </div>
               <div class="form-group">
                 <label class="control-label" for="exampleInputPassword1">Guest list</label>
